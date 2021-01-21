@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WebTeam#1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="icon" href="pics/fav1.png">
+  </head>
+  <body onload="document.getElementById('demo').innerHTML = Date()">
+    <!--Header Test
+    <img href='pics/fav1.png' style='float:left;width:50px;height:50px;'/>
+    <br><br><br><br>
+    <hr>
+-->
+    <!--Top navigation menu-->
+    <ul id='topnav'class='topnav'>
+    <li><a class='active' onclick="location.href='index.html'" title='Home Page'>Home&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='music.html'" title='Music'>Music&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='chat.html'"
+    title='Chat'>Chat&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='news.html'"
+    title='News'>News&nbsp;&nbsp;<span class="badge">3</span></a></li>
+    <li><a onclick="location.href='picture.html'"
+    title='Images'>Images&nbsp;&nbsp;</a></li>
+    <li><a onclick="myFunction2();myFunction3();myFunction4();" title="Change theme"><!--<span class=" far fa-moon  ">--></span>Mode&nbsp;&nbsp;</a></li>
+    <li><div class="dropdown">
+  <a class="dropbtn">Learn&nbsp;&nbsp;</a>
+  <div class="dropdown-content">
+    <a href='https://www.w3schools.com/' target="_blank">W3Schools<span class="badge" style='font-size:10px;'>Recommended</span></a>
+    <a href='https://www.quackit.com/' target="_blank">Quackit</a>
+    <a href='https://css-tricks.com/' target="_blank">CSS Tricks<span class="badge" style='font-size:10px;color:black;'>Recommended</span></a>
+    <a href='https://www.backlinkn.com/' target="_blank">Backlinkn</a>
+    <a href='https://www.geeksforgeeks.org/' target="_blank">GeeksforGeeks</a>
+    <a href='https://stackoverflow.com/' target="_blank">Best Q&A</a>
+  </div></li>
+</div>
+<li><div class="dropdown">
+  <a class="dropbtn">More&nbsp;&nbsp;</a>
+  <div class="dropdown-content">
+    <a onclick="location.href='newbie.html'">Newbie Page&nbsp;&nbsp;</a>
+    <a onclick="location.href='repl.html'">Repl.it Editor&nbsp;&nbsp;</a>
+    <a onclick="location.href='fun.html'" title='Fun Page'>Fun&nbsp;&nbsp;</a>
+    <a href='https://dandd.dominikhonzak.repl.co/' target="_blank">Dom's D&D</a>
+    <a href='https://covid-19.webteamone.repl.co/' target="_blank">Covid-19 Updates</a>
+    <a href='https://box-move.dominikhonzak.repl.co/' target="_blank">Dom's Games</a>
+</div>
+    
+    <li id='contact_us'><a onclick="location.href='contact.html'">Contact Us&nbsp;&nbsp;</a></li>
+    </ul>
+
+
+
+    <!--End of Topnav Start of PIC-->
+    <div class='pic1'>
+    <div class="container">
+  <img src="pics/city.png" alt="City" style="width:100%;">
+  <div class="centered1" id='hi2'>Welcome to WebTeam#1</div>
+  <div class='centered2' id='hi1'>The coding team's resource center<br><br><a class='login-button-1'onclick="location.href='login1.html'">Login&nbsp;&nbsp;</a></div>
+</div>
+    </div>
+
+
+
+<span class='time_date' id="demo"></span>
+<h3><u><b>Notice Board:</u></b></h3>
+<marquee class='scroller' behavior="scroll" direction="left" scrollamount="15"><b id='jkghds'>Monthly Notice:</b>&nbsp;If you are part of <b>WebTeam#1</b> Please help with building this site so it looks good, has helpful content, and  works well.&nbsp;Below are tasks you can do to improve the site.&nbsp;If you have any questions, comments, or suggestions please contact me on the contact page.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thank You! Dominik Honzak &nbsp;</marquee><br><br>
+<marquee class='scroller' behavior="scroll" direction="left" scrollamount="15"><b id='jkghds'>Latest Notice:</b>&nbsp;We are currently working on the login page and the output of the login page look to see example or learn how to do it on the news page.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thank You! Dominik Honzak &nbsp;</marquee><br><br><br><br><br><br>
+<div class='div14'></div>
+
+<br>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+<marquee class='NoticeB' behavior="scroll" direction='up' scrollamount="4.5" style="box-shadow: 0px 0px 500px blue;height:100%; width:100%;  overflow:auto;"><u>Future updates will include:</u><br><br>1)&nbsp;Making this site ipad/tablet compatible.<br><br>2)&nbsp;Adding a function to skip through audio and video.<br><br>3)&nbsp;Adding more pages more links and making the site a little more lively.<br><br>4)&nbsp;Im sorry about the style.css I bunched it together on pourpose so that it is less readable meaning people cannot copy it as easily.<br><br>5)&nbsp;lastly making a light an dark theme for the website on the topnav.<br><br></div></marquee>
+</div>
+    <div class="flip-box-back">
+      <h1>Thank You!<br>Do your best...</h1>
+    </div>
+  </div>
+</div>
+</p>
+<br>
+<br>
+<br>
+<br>
+<a class='login-button-1' style='width:100px;'onclick="location.href='settings.html'">☾ Settings&nbsp;&nbsp;</a>
+<br>
+<br><div id="mydiv">
+  <div id="mydivheader">Click here to move</div>
+  
+
+<p>Load Audio file:</p>
+<input id="audio_file" type="file" accept="audio/*" />
+<!-- <audio control id="audio_player" /> -->
+<p>
+<div class='player_background'>
+<audio controls loop id="audio_player"></audio>
+</div>
+</p>
+<script>
+audio_file.onchange = function(){
+    var files = this.files;
+    var file = URL.createObjectURL(files[0]); 
+    audio_player.src = file; 
+    audio_player.play();
+};
+</script>
+</div>
+
+
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("mydiv"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p class="warning"><warning class='warning2'>⚠&nbsp;&nbsp;<strong>Warning:</strong> If you are not part of WebTeam#1 and are on this site, your IP adress will be logged and blocked upon entering any of the other pages.</warning></p>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<script src="script.js">//-------------------javascript---------------------</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

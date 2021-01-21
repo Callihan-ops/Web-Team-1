@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Music</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="pics/fav1.png">
+  </head>
+  <body onload="document.getElementById('demo').innerHTML = Date()">
+    
+    
+
+
+
+    <!--Top navigation menu-->
+    <ul id='topnav'class='topnav'>
+    <li><a onclick="location.href='index.html'" title='Home Page'>Home&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='music.html'">Music&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='chat.html'">Chat&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='news.html'">News&nbsp;&nbsp;<span class="badge">3</span></a></li>
+    <li><a onclick="location.href='picture.html'">Images&nbsp;&nbsp;</a></li>
+    <li><a onclick="myFunction2();myFunction3();myFunction4();" title="Change theme"><!--<span class=" far fa-moon  ">--></span>Mode&nbsp;&nbsp;</a></li>
+    <li><div class="dropdown">
+  <a class="dropbtn">Learn&nbsp;&nbsp;</a>
+  <div class="dropdown-content">
+    <a href='https://www.w3schools.com/' target="_blank">W3Schools<span class="badge" style='font-size:10px;'>Recommended</span></a>
+    <a href='https://www.quackit.com/' target="_blank">Quackit</a>
+    <a href='https://css-tricks.com/' target="_blank">CSS Tricks<span class="badge" style='font-size:10px;color:black;'>Recommended</span></a>
+    <a href='https://www.backlinkn.com/' target="_blank">Backlinkn</a>
+    <a href='https://www.geeksforgeeks.org/' target="_blank">GeeksforGeeks</a>
+    <a href='https://stackoverflow.com/' target="_blank">Best Q&A</a>
+  </div></li>
+</div>
+<li><div class="dropdown">
+  <a class="dropbtn">More&nbsp;&nbsp;</a>
+  <div class="dropdown-content">
+    <a onclick="location.href='newbie.html'">Newbie Page&nbsp;&nbsp;</a>
+    <a onclick="location.href='repl.html'">Repl.it Editor&nbsp;&nbsp;</a>
+    <a onclick="location.href='fun.html'" title='Fun Page'>Fun&nbsp;&nbsp;</a>
+</div>
+    
+    <li id='contact_us'><a onclick="location.href='contact.html'">Contact Us&nbsp;&nbsp;</a></li>
+    
+
+
+    </ul>
+    <!--End of Topnav Start of PIC-->
+
+   
+
+
+    <div class="container">
+  <img src="pics/music_pic1.jpg" alt="Music_Pic" style="width:100%;height:75%;">
+  <div class="centered3" id='hi2'>Dom's Music Catalog</div>
+  <div class='centered2' id='hi3'><b>Note:</b>&nbsp;To comment on the Music below<br> contact the Administrator, email on homepage.</div>
+</div>
+    
+    
+
+<span class='time_date' id="demo"></span>
+<h3> Dominik's music (some randomly picked from the internet):</h3>
+<p><b>Note:</b>&nbsp;You can download any of this music simply <br> by pressing the little three dots at the end of the music bar.<br>&nbsp;Also note that you cannot skip forward on any of these audio tracks, we will be working on that in the future.<br>&nbsp;&nbsp;&nbsp;Thankyou! for using our services.</p>
+    
+    
+<hr class='lines1'>
+
+<h4> Best #1:</h4>
+<div class='player_background'>
+<audio id='myAudio' class='player3' controls loop>
+<source src="music/EPF31.mp3" type="audio/mpeg">
+<source src="music/EPF31.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Best#2:</h4>
+<div class='player_background'>
+<audio id='myAudio1' class='player3' controls loop>
+<source src="music/SMBT2.mp3" type="audio/mpeg">
+<source src="music/SMBT2.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Best#3:</h4>
+<div class='player_background'>
+<audio id='myAudio2' class='player3' controls loop>
+<source src="music/T12.mp3" type="audio/mpeg">
+<source src="music/T12.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Best#4:</h4>
+<div class='player_background'>
+<audio id='myAudio3' class='player3' controls loop>
+<source src="music/SM1.mp3" type="audio/mpeg">
+<source src="music/SM1.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Best#5:</h4>
+<div class='player_background'>
+<img class='audio_image' src="music_pics/FULLM2.jpg" alt="Music_Pic">  
+<audio id='myAudio4' class='player3' controls loop>
+<source src="music/FMP.mp3" type="audio/mpeg">
+<source src="music/FMP.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Best#6:</h4>
+<div class='player_background'>
+<img class='audio_image' src="music_pics/FULLM1.jpeg" alt="Music_Pic">
+<audio id='myAudio5' class='player3' controls loop>
+<source src="music/FMR.mp3" type="audio/mpeg">
+<source src="music/FMR.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Alchemists Code:</h4>
+<div class='player_background'>
+<img class='audio_image' src="music_pics/ACode1.png" alt="Music_Pic">
+<audio id='myAudio6' class='player3' controls loop>
+<source src="music/TAC.mp3" type="audio/mpeg">
+<source src="music/TAC.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Alchemists Code:</h4>
+<div class='player_background'>
+<img class='audio_image' src="music_pics/ACode2.jpeg" alt="Music_Pic">
+<audio id='myAudio7' class='player3' controls loop>
+<source src="music/special.mp3" type="audio/mpeg">
+<source src="music/special.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Alchemists Code:</h4>
+<div class='player_background'>
+<img class='audio_image' src="music_pics/ACode3.jpg" alt="Music_Pic">
+<audio id='myAudio8' class='player3' controls loop>
+<source src="music/TAC2.mp3" type="audio/mpeg">
+<source src="music/TAC2.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Alchemists Code:</h4>
+<div class='player_background'>
+<img class='audio_image' src="music_pics/ACode6.png" alt="Music_Pic">
+<audio id='myAudio9' class='player3' controls loop>
+<source src="music/WWLAG.mp3" type="audio/mpeg">
+<source src="music/WWLAG.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Alchemists Code:</h4>
+<div class='player_background'>
+<img class='audio_image' src="music_pics/ACode5.jpg" alt="Music_Pic">
+<audio id='myAudio7' class='player3' controls loop>
+<source src="music/WJL.mp3" type="audio/mpeg">
+<source src="music/WJL.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Fantasy Music:</h4>
+<div class='player_background'>
+<audio id='myAudio8' class='player3' controls loop>
+<source src="music/EPF1.mp3" type="audio/mpeg">
+<source src="music/EPF1.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Fantasy Music:</h4>
+<div class='player_background'>
+<audio id='myAudio9' class='player3' controls loop>
+<source src="music/EPF2.mp3" type="audio/mpeg">
+<source src="music/EPF2.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>Calm Fantasy Music:</h4>
+<div class='player_background'>
+<audio id='myAudio10' class='player3' controls loop>
+<source src="music/Quest.mp3" type="audio/mpeg">
+<source src="music/Quest.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+<h4>FairyTail:</h4>
+<div class='player_background'>
+<img class='audio_image' src="music_pics/FairyTail3.jpg" alt="Music_Pic">  
+<audio id='myAudio11' class='player3' controls loop>
+<source src="music/FT1.mp3" type="audio/mpeg">
+<source src="music/FT1.ogg" type="audio/ogg">
+</audio>
+</div>
+<hr class='lines1'>
+
+
+
+
+
+
+
+<h4> Best Long Music#1:</h4>
+<video id="vid1" width="50%" height="50" controls loop>
+  <source src="music/video_music.mp4" type="video/mp4">
+  <source src="music/video_music.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> 
+<hr class='lines1'>
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+  </body>
+</html>

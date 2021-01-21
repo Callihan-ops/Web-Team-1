@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WebTeam#1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="pics/fav1.png">
+</head>
+<body>
+<style>
+body {
+  background-color:white;
+}
+
+</style>
+
+
+<ul class='topnav'>
+    <li><a onclick="location.href='index.html'">Home&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='fun.html'">Fun&nbsp;&nbsp;</a></li>
+    <li><a  onclick="location.href='music.html'">Music&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='chat.html'">Chat&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='news.html'">News&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='picture.html'">Images&nbsp;&nbsp;</a></li>
+    <li><div class="dropdown">
+  <a class="dropbtn">Learn&nbsp;&nbsp;</a>
+  <div class="dropdown-content">
+    <a href='https://www.w3schools.com/' target="_blank">W3Schools</a>
+    <a href='https://www.quackit.com/' target="_blank">Quackit</a>
+    <a href='https://css-tricks.com/' target="_blank">CSS Tricks</a>
+    <a href='https://www.backlinkn.com/' target="_blank">Backlinkn</a>
+  </div></li>
+</div>
+    <li id='contact_us'><a onclick="location.href='contact.html'">Contact Us&nbsp;&nbsp;</a></li>
+    </ul>
+
+<br>
+<br>
+<br>
+
+<h2>Settings Testing</h2>
+<p>Click the button to toggle between dark and light mode for this page:</p>
+<label class="switch">
+  <input onclick="myFunction()" type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+<a>Toggle dark mode</a>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<style>
+
+</style>
+</head>
+<body>
+
+<h2>Text Themes</h2>
+<p>Click on the button to open the dropdown menu.</p>
+
+<div class="dropdown123">
+  <button onclick="myFunction4()" class="dropbtn123">Text Themes</button>
+  <div id="myDropdown123" class="dropdown-content123">
+    <a onclick="myFunction1()">Contrast</a>
+    <a onclick="myFunction2()">dark</a>
+    <a onclick="myFunction3()">light</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction4() {
+  document.getElementById("myDropdown123").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn123')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content123");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+function myFunction1() {
+   var element1 = document.body;
+   element1.classList.toggle("Contrast-text");
+}
+function myFunction2() {
+   var element2 = document.body;
+   element2.classList.toggle("dark-text");
+}
+function myFunction3() {
+   var element3 = document.body;
+   element3.classList.toggle("light-text");
+}
+</script>
+</body>
+</html>

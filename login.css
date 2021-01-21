@@ -1,0 +1,223 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url("images/vermont2.jpg");
+  
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+/*.right {
+  content: "";
+  height: 395px;
+  width: 550px;
+  background-color: #2a2f40;
+  z-index: 3;
+  margin-left: 200px;
+}*/
+.login {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+  width: 380px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-family: 'Montserrat',sans-serif;
+  box-shadow: -4px 4px 12px 1px rgba(0,0,0,0.4);
+}
+
+.login header {
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+}
+/*.right {
+  content: "";
+  height: 395px;
+  width: 550px;
+  background-color: #2a2f40;
+  z-index: 3;
+  margin-left: 200px;
+}*/
+.field {
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.field span {
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+  text-align: center;
+}
+/*.right {
+  content: "";
+  height: 395px;
+  width: 550px;
+  background-color: #2a2f40;
+  z-index: 3;
+  margin-left: 200px;
+}*/
+.field input {
+  width: 100%;
+  height: 45px;
+  font-size: 1.1rem;
+  padding: 5px;
+  color: #34495e;
+  border: none;
+}
+
+.field input::placeholder {
+  color: #95a5a6;
+}
+
+input:focus, input:active, input:hover {
+  outline: none;
+}
+/*.right {
+  content: "";
+  height: 395px;
+  width: 550px;
+  background-color: #2a2f40;
+  z-index: 3;
+  margin-left: 200px;
+}*/
+.forgot-password {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.forgot-password a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+/*content: "";
+  height: 395px;
+  width: 330px;
+  display: flex;*/
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 45px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #0074D9;
+  border: none;
+  transition: all 0.1s linear;
+}/*.right {
+  content: "";
+  height: 395px;
+  width: 550px;
+  background-color: #2a2f40;
+  z-index: 3;
+  margin-left: 200px;
+}*/
+
+.submit:hover {
+   cursor: pointer;
+   background-color: #0070d1;
+}
+
+.login-form-copy {
+  margin-bottom: 15px;
+}
+
+.login-form__sign-up {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.login-form__sign-up:hover {
+  text-decoration: underline;
+}
+/*content: "";
+  height: 395px;
+  width: 330px;
+  display: flex;*/
+.social-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 35px;
+}/*.right {
+  content: "";
+  height: 395px;
+  width: 550px;
+  background-color: #2a2f40;
+  z-index: 3;
+  margin-left: 200px;
+}*/
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.instagram {
+  background-color: #F56040;
+}
+
+.twitter {
+  background-color: #00acee;
+}
+/*.product-info {
+  position: absolute;
+  margin-left: 245px;
+  height: 394px;
+  width: 305px;
+  z-index: 10;
+}*/
+.google {
+  background-color: #DB4437;
+}
+
+.linkedin {
+  background-color: #2867B2;
+}
+/* Container holding the image and the text */
+
+
+/* Bottom right text */
+.text-block123 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color:rgba(0,0,0,.8);
+  color: white!important;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size:12px;
+}

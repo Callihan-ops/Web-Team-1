@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WebTeam#1</title>
+    <link href="login.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="icon" href="pics/fav1.png">
+  </head>
+  <body onload="document.getElementById('demo').innerHTML = Date()">
+    <script src="script.js"></script>
+
+    <!--Top navigation menu-->
+    <ul class='topnav'>
+    <li><a onclick="location.href='index.html'">Home&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='fun.html'">Fun&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='music.html'">Music&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='chat.html'">Chat&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='news.html'">News&nbsp;&nbsp;</a></li>
+    <li><a onclick="location.href='picture.html'">Images&nbsp;&nbsp;</a></li>
+    <li><div class="dropdown">
+  <a class="dropbtn">Learn&nbsp;&nbsp;</a>
+  <div class="dropdown-content">
+    <a href='https://www.w3schools.com/' target="_blank">W3Schools</a>
+    <a href='https://www.quackit.com/' target="_blank">Quackit</a>
+    <a href='https://css-tricks.com/' target="_blank">CSS Tricks</a>
+    <a href='https://www.backlinkn.com/' target="_blank">Backlinkn</a>
+  </div></li>
+</div>
+    <li id='contact_us'><a onclick="location.href='contact.html'">Contact Us&nbsp;&nbsp;</a></li>
+    
+
+
+    </ul>
+    
+    
+<form action="/valid.php" class="login">
+      <header>Login</header>
+      <div class="field"><span class="fa fa-user"></span><input type="text" placeholder="Email or User Name"></div>
+      <div class="field"><span class="fa fa-lock"></span><input type="password" placeholder="Password"></div>
+      
+      <div class="forgot-password"><a href="/">Forgot password?</a></div>
+      <input type="submit" class="submit" value="LOGIN"></input>
+      <span class="login-form-copy">Or login with</span>
+      <div class="social-icons">
+        
+        <div class="social-icon facebook"><span class="fa fa-facebook"></span></div>
+        <div class="social-icon instagram"><span class="fa fa-instagram"></span></div>
+        <div class="social-icon twitter"><span class="fa fa-twitter"></span></div>
+       
+        <div class="social-icon google"><span class="fa fa-google"></span></div>
+        <div class="social-icon linkedin"><span class="fa fa-linkedin"></span></div>
+      </div>
+    <span class="logn-form-copy">Don't have an account? <a href="/" class="login-form__sign-up">Sign up</a></span>
+    </form>
+
+
+
+
+
+
+  <div class="text-block123">
+    <p>Picture taken by: Dominik Honzak</p>
+  </div>
+
+
+
+  </body>
+</html>

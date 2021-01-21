@@ -1,0 +1,350 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+/*background color of all pages  rgb(66, 63, 63)  */
+body{
+  background-color: black;
+}
+/*Navigation-bar background layer  rgb(49, 46, 46);*/
+ul {
+  background-color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 45px;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+}
+/*Navigation-bar links positioning*/
+li {
+  float: left;
+  display: inline;
+}
+/*Navigation-bar link boxes and text positioning*/
+li a {
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+  color: white;
+}
+/*[Navigation-bar]For all the links hovered over only the one with 'active' class will not turn red*/
+li a:hover:not(.active) {
+  background-color: rgb(235, 229, 229);
+  color: black;
+}
+/*[Navigation-bar]The active class will be this background color*/
+.active {
+  background-color: rgb(138, 138, 138);
+  color:black;
+}
+/*fixed top navigation menu*/
+.topnav {
+  position: fixed;
+  top: 0;
+  
+}
+
+
+/*picture text positioning*/
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+/*[Experiment#2]for text to appear in dead center of image*/
+.centered1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+/*[Experiment#2] positioning for smaller text to be underneath bigger text in image*/
+.centered2 {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+/*[Experiment#2] text sizing by id{big text}*/
+#hi2 {
+  font-size: 65px;
+}
+/*[Experiment#2] text sizing by id{small text}*/
+#hi1 {
+  font-size: 25px;
+}
+#hi3 {
+  font-size: 25px;
+}
+.centered3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+.warning {
+  background-color:rgba(255, 0, 0, 0.397);
+  opacity:0.7;
+  padding:10px;
+  /*visibility: hidden;*/
+ 
+}
+.warning2 {
+  color:red;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow: auto;
+  padding-top: 20px;
+  
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  overflow: auto;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+.lines1 {
+  background-color:rgb(92, 92, 92);
+  border-color:rgb(92, 92, 92);
+  color:rgb(92, 92, 92);
+}
+
+p {
+  color: rgb(124, 119, 119);
+}
+
+marquee {
+  color: rgb(124, 119, 119);
+}
+
+h4 {
+  color:blue;
+}
+
+h3 {
+  color:blue;
+}
+
+#jkghds {
+  color: blue;
+}
+
+#fff111 {
+  color: violet;
+
+}
+
+
+.time_date {
+  color:rgb(92, 92, 92);
+  float:right;
+}
+
+
+
+#contact_us {
+  float: right;
+}
+
+/*music player #1 height*/
+#player {
+  height: 20px;
+}
+/*music player #2 height and position on screen*/
+#player2{
+  height: 20px;
+  float: right;
+}
+/*music player #3 (connected to many music players  for the music catalog) height and half of the screen of width*/
+.player3{
+  height: 50px;
+  width: 50%;
+}
+
+
+
+
+
+.link111 {
+  color: rgb(52, 177, 226);
+}
+
+
+
+#learning12345 {
+  color: rgb(255, 0, 0);
+}
+
+
+.scroller {
+  float: center;
+  width: 250px;
+ 
+}
+
+/*
+  height:100px;*/
+
+
+.NoticeB {
+  color:rgb(124, 119, 119);
+  background-color:black;
+  
+}
+
+
+
+.discordchat {
+  float:right;
+}
+
+/*the start of making website phone and ipad compatible:*/
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+  ul.topnav li {
+    overflow:auto;
+    position:inherit;
+  }
+  ul.topnav {
+    position:relative;
+  }
+
+  /*Normal 'p' px size is 13.3px
+  p {font-size:11.5px;
+  }
+  /*Normal 'h4' px size is 16px
+  h4 {font-size:12px;
+  }*/
+
+  #hi2 {
+    font-size:40px;
+  }
+  #hi1 {
+    font-size:18px;
+  }
+  .centered1 {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+  .centered2 {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+.pic1 {
+  /*overflow:auto;*/
+  margin:auto;
+}
+.topnav {
+  top: 0;
+}
+.player3 {
+  width:100%;
+}
+.sidenav {
+  width:100%;
+  bottom:0;
+  top:70%;
+  overflow:auto;
+  padding-top: auto;
+  margin:auto;
+  background-color:black;
+}
+.dropbtn {
+  width:auto;
+}
+.scroller {
+  width:100%;
+}
+#hi3 {
+  visibility: hidden;
+}
+.centered3 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+}
+
+
+
+/*------------------------dropdown-----------------------*/
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+/*dropdown menu posiononing relative to the hoverblock*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/*dropdown menu position,z-index,position,width of block,and background color*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  z-index: 1;
+}
+/*when the links are not being hovered thesse are their settings*/
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/*The links that are hovered upon turn white*/
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+/*dropdown content is displayed in blocks*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*the dropdown menu stays white and the words stay black as the links are being hovered upon*/
+.dropdown:hover .dropbtn {
+  background-color: white; 
+  color:black;
+}
+
+
+
+.fun_text {
+  font-size:100px;
+  color:blue;
+  opacity:0.5;
+}
+.fun_text2 {
+  font-size:24px;
+  color:blue;
+  opacity:0.5;
+}
