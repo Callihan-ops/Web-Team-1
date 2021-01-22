@@ -8,8 +8,7 @@
 body {
   display: flex;
   justify-content: center;
-  background-image: url("images/vermont2.jpg");
-  
+  background-image: url("pics/map.jpg");
   background-position: center;
   background-size: cover;
   height: 600px;
